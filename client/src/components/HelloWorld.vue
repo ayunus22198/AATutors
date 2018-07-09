@@ -16,14 +16,24 @@
 
   <div id = "slider">
     <figure>
-      <img src = "../../images/books.jpg">
       <img src = "../../images/geom.jpg">
-      <img src = "../../images/math1.jpg">
-      <img src = "../../images/math2.jpg">
+      <img src = "../../images/geom.jpg">
+      <img src = "../../images/geom.jpg">
     </figure>
   </div>
-
+  <div id = "info">
+    <article>
+      <img src = "../../images/K-6.png">
+    </article>
+    <aside>
+    Hello
+    </aside>
   </div>
+  <div id = "info2">
+    Shiny!
+  </div>
+  </div>
+
 </template>
 
 <script>
@@ -104,7 +114,11 @@ html{
 }
 
 #slider {
-  overflow:hidden;
+  overflow: hidden;
+  left: 0;
+
+  display:block;
+  width: 100%;
 }
 
 #slider figure img {
@@ -122,5 +136,29 @@ html{
   animation: 20s slider;
 }
 
+#info {
+  text-align:left;
+  display:block;
+  width: 100%;
+}
 
+#info2 {
+  text-align:left;
+  display:block;
+  width: 100%;
+}
+
+article {
+  float: left;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+aside {
+  float:right;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
 </style>
